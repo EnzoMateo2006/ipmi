@@ -1,0 +1,75 @@
+PImage renemagritte; 
+void setup() {
+size(800, 400);
+background (70) ;
+renemagritte = loadImage("imagen.png");
+background (39, 85, 112) ;
+fill (173, 216, 230);
+rect (0, 91, 400, 170) ;
+fill(22, 41, 85);
+beginShape();
+vertex(0, 150);
+vertex(100, 182);
+vertex(270, 182);
+vertex(301, 159);
+vertex(341, 172);
+vertex(365, 162);
+vertex(400, 182);
+vertex(400, 365);  
+vertex(0, 365);    
+endShape(CLOSE);
+image(renemagritte, 400, 0, 400, 400);
+fill (200);
+rect(0, 365, 400, 365);
+fill(120);
+rect(0, 375, 400, 400);
+line(0, 393, 400, 393);
+line(0, 375, 400, 375);
+line(36, 393, 36, 375);
+line(36, 375, 46, 365);
+line(98, 393, 98, 375);
+line(98, 375, 106, 365);
+line(316, 393, 316, 375);
+line(316, 375, 307, 365);
+line(372, 393, 372, 375);
+line(372, 375, 358, 365);
+line(26, 393, 26, 400);
+line(83, 393, 83, 400);
+line(338, 393, 338, 400);
+line(382, 393, 382, 400);
+}
+
+void draw() {
+
+fill(255, 150, 70);
+circle(209, 158, 210);
+fill(10, 10, 20);
+rect(124, 293, 170, 400);
+triangle(228, 293, 291, 293, 232, 280);
+triangle(194, 280, 198, 293, 125, 293);
+fill(255);
+triangle(212, 330, 194, 280, 231, 280);
+fill(255, 0, 0);
+circle(212, 291, 10);
+rect(208, 294, 8, 23);
+triangle(207, 317, 217, 317, 212, 328);
+fill(255);
+circle(200, 138, 8);
+fill(0);
+circle(200, 138, 2);
+fill(255);
+circle(230, 138, 8);
+fill(0);
+circle(230, 138, 2);
+line(220, 132, 220, 157);
+line(220, 132, 235, 132);
+line(220, 157, 210, 155); 
+line(205, 132, 195, 132);
+fill(255, 0, 0);
+rect(210, 163, 13, 4);
+line(208, 165, 225, 165);
+println("X:") ;
+println(mouseX) ;
+println("Y:") ;
+println(mouseY) ; 
+}
