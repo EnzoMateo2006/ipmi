@@ -3,6 +3,9 @@ void setup() {
 size(800, 400);
 background (70) ;
 renemagritte = loadImage("imagen.png");
+}
+
+void draw() {
 background (39, 85, 112) ;
 fill (173, 216, 230);
 rect (0, 91, 400, 170) ;
@@ -37,10 +40,6 @@ line(26, 393, 26, 400);
 line(83, 393, 83, 400);
 line(338, 393, 338, 400);
 line(382, 393, 382, 400);
-}
-
-void draw() {
-
 fill(255, 150, 70);
 circle(209, 158, 210);
 fill(10, 10, 20);
